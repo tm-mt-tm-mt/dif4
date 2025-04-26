@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Entity Comparison App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Entity Manager & Comparator</h1>
+
+    <input type="text" id="folderName" placeholder="Root folder name">
+    <button onclick="addFolder(null)">Add root folder</button>
+    <div id="folderContainer"></div>
+
+    <hr>
+    <h2>Compare Entities</h2>
+    <div id="manualEntityInput">
+      <label>Enter entity names to compare (separated by commas):</label><br>
+      <input type="text" id="compareInput" placeholder="e.g. entity1, entity2, entity3">
+      <button onclick="compareByName()">Compare Entities</button>
+    </div>
+    <div id="comparisonResult"></div>
+  </div>
+
+  <datalist id="featureSuggestions"></datalist>
+  <script src="script.js"></script>
+</body>
+</html>
